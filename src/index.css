@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Medium';
+  src: url('./assets/fonts/beatrice-display-trial-cufonfonts/BeatriceTRIAL-Medium-BF64829e8ac35f2.otf')
+    format('opentype');
+}
+
+.border-red {
+  border: 2px solid red;
+}
+
+.border-blue {
+  border: 2px solid blue;
+}
