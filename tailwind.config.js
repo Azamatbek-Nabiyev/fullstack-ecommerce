@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         medium: ['Medium'],
+        regular: ['Regular'],
+        extrabold: ['ExtraBold'],
       },
     },
   },

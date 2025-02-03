@@ -8,7 +8,7 @@ import { FaRegUser } from 'react-icons/fa';
 
 export default () => {
   return (
-    <div className='flex justify-between items-center border-red py-5'>
+    <div className='flex justify-between items-center py-5'>
       <div className='flex justify-start items-center gap-5'>
         <CgMenuLeftAlt size={26} />
         <Navbar />
