@@ -5,6 +5,8 @@ import { FaAngleLeft } from 'react-icons/fa';
 import { FaAngleRight } from 'react-icons/fa';
 import man from '../../assets/images/man.png';
 import man2 from '../../assets/images/man2.png';
+import DetailCard from '../../components/card/detailCard';
+import { data } from './data';
 
 export default () => {
   return (
@@ -79,6 +81,53 @@ export default () => {
         </div>
       </div>
       {/* new collection end*/}
+
+      {/* new this wee start */}
+      <div className='border-red p-2 mt-16'>
+        <div className='flex justify-between items-end'>
+          <div className='font-extrabold text-5xl leading-10'>
+            <p>NEW</p>
+            <p className='relative'>
+              THIS WEEK{' '}
+              <span className='text-[#000E8A] text-[20px] absolute bottom-8'>
+                (50)
+              </span>
+            </p>
+          </div>
+          <div>
+            <span className='font-regular text-sm text-[#5E5E5E]'>See All</span>
+          </div>
+        </div>
+        <div className='mt-8 flex gap-10'>
+          {data.map((product) => {
+            return (
+              <DetailCard
+                image={product.image}
+                price={product.price}
+                title={product.title}
+                desc={product.desc}
+              />
+            );
+          })}
+        </div>
+        <div className='mt-5 flex justify-center items-center'>
+          <div className='flex gap-3'>
+            <Button
+              width='w-[40px]'
+              height='h-[40px]'
+              icon={<FaAngleLeft color='#C6C6C6' />}
+              className='border-2 border-[#C6C6C6]'
+            />
+            <Button
+              width='w-[40px]'
+              height='h-[40px]'
+              icon={<FaAngleRight color='#000000' />}
+              className='border-2 border-[#A7A7A7]'
+            />
+          </div>
+        </div>
+      </div>
+      {/* new this wee end */}
     </div>
   );
 };
