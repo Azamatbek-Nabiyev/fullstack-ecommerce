@@ -7,6 +7,7 @@ export default {
         medium: ['Medium'],
         regular: ['Regular'],
         extrabold: ['ExtraBold'],
+        light: ['Light'],
       },
     },
   },

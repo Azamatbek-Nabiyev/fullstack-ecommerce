@@ -18,6 +18,11 @@
   src: url('./assets/fonts/beatrice-display-trial-cufonfonts/BeatriceTRIAL-Extrabold-BF64829e8b6b9f2.otf')
     format('opentype');
 }
+@font-face {
+  font-family: 'Light';
+  src: url('./assets/fonts/beatrice-display-trial-cufonfonts/BeatriceTRIAL-Light-BF64829e8b17e87.otf')
+    format('opentype');
+}
 
 .border-red {
   border: 2px solid red;
