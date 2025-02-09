@@ -9,11 +9,11 @@ export default ({
   className,
 }: Button) => {
   return (
-    <div
+    <button
       className={`${width} ${height} ${className} flex justify-center items-center gap-2`}
     >
       {icon && <span>{icon}</span>}
       {label && <span>{label}</span>}
-    </div>
+    </button>
   );
 };

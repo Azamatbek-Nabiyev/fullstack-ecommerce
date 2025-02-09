@@ -5,7 +5,7 @@ import { GoPlus } from 'react-icons/go';
 
 export default ({ image, price, title, desc }: productDetail) => {
   return (
-    <div className='w-[350px] h-[400px] overflow-hidden'>
+    <div className='w-[300px] h-[400px] overflow-hidden'>
       <div className='w-full h-[340px] border-2 relative'>
         <img src={image} alt='' className='w-full h-full object-cover' />
         <Button
